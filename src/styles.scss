@@ -1,18 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
-@import "variables";
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    color: #fff;
-}
-body{
-    font-family: $ABeeZee;
-    background-color:#242424;
-}
+@import "globalStyle";
 
-a{
-    text-decoration: none;   
-    padding: 0 10px; 
-    color: #fff;
+body{
+    background-color:#131218;
 }

@@ -1,1 +1,24 @@
-<p>main-menu works!</p>
+<div class="container">
+    <div class="main-wrapper">
+        <div class="logo-layer">
+            <div class="search-container">
+                <img src="../../../assets/images/main-menu/search.png" alt="" class="search-icon">
+                <p class="search-text">Поиск</p>
+            </div>
+            <div class="logo-container">
+                <img [src]="logoMenu" alt="">
+            </div>
+            <div class="like-n-basket-container">
+                <div class="like like-n-basket-item">
+                    <img src="../../../assets/images/main-menu/like.png" alt="">
+                </div>
+                <div class="basket like-n-basket-item">
+                    <img src="../../../assets/images/main-menu/basket.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="menu-layer">
+            <div class="item-menu" *ngFor="let link of mainMenuLinks"><a href="">{{link}}</a></div>
+        </div>
+    </div>
+</div>

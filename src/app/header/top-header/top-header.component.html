@@ -1,1 +1,27 @@
-<p>top-header works!</p>
+<div class="container">
+    <div class="wrapper-top-menu">
+        <div class="information-city">
+            <p>Ваш город:</p>
+            <p class="city-name">{{cityName}}</p>
+        </div>
+        <div class="social-links">
+            <div class="link-item" *ngFor="let item of socialLinks">
+                <a [href]="item.linkAdress">
+                    <img [src]="item.imgURL" alt="">
+                </a>
+            </div>
+            
+        </div>
+        <div class="contacts-info">
+            <div class="phone-info">
+                <div class="phone-icon">
+                    <img [src]="phoneIcon" alt="">
+                </div>
+                <div class="phone-number contact-style">{{phoneNumber}}</div>
+            </div>
+            <p class="day-info contact-style">{{dayInfo}}</p>
+            <p class="schedule-info contact-style">{{scheduleInfo}}</p>
+        </div>
+        
+    </div>
+</div>

@@ -1,0 +1,16 @@
+@import "variables";
+
+*{
+    font-family: $ABeeZee;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: #fff;
+}
+.main-wrapper{
+    max-width: 1057px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
