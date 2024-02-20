@@ -1,0 +1,14 @@
+<div class="main-categories-wrapper">
+    <div class="main-wrapper display-flex-wrapper">
+        <div class="categories-item"  
+            *ngFor="let item of categoriesItems" 
+            [ngStyle]="{'backgroundImage':'url('+item.backgroundIMG+')'}"
+            >
+            <div class="mask"></div>
+            <img src="../../../assets/images/index-page/main-categories/mediator.png" alt="">
+            <h4 class="title">
+                {{item.title}}
+            </h4>         
+        </div>
+    </div>
+</div>

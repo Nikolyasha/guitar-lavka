@@ -45,9 +45,11 @@
         .menu-layer{
             position: relative;
             z-index: 101;
+            height: 30px;
             // border: 1px solid cyan;
             display: flex;
             justify-content: center;
+            align-items: center;
             gap:13px;
             .item-menu{
                 a{
