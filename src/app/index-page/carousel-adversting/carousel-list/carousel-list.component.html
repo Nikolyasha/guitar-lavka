@@ -1,0 +1,28 @@
+
+<div class="list-wrapper" >
+    <div class="arrows-wrapper">
+        <div class="arrow-item">
+            <img src="../../../assets/images/index-page/carousel-adversting/arrow-left.svg" alt="" (click)="swapCarouselLeft()">
+        </div>
+        <div class="arrow-item">
+            <img src="../../../assets/images/index-page/carousel-adversting/arrow-right.svg" alt=""(click)="swapCarouselRight()">
+        </div>
+    </div>
+    <div class="carousel-section" [ngStyle]="{'transform':'translateX('+positionCarousel+'%)'}">
+
+        <div class="list-item" 
+            *ngFor="let item of carouselItems;let ind = index" 
+            [ngStyle]="{'backgroundImage':'url('+item.backgroundIMG+')','transform':'translateX('+(ind==0 ? 0 : (ind*100))+'%)'}"
+            >
+            <div class="info-wrapper">
+                <div class="info-item">
+                    <h3>{{item.title}}</h3>
+                    <p class="subtitle-info" *ngIf="item.subtitle">{{item.subtitle}}</p>
+                    <p class="text-info">{{item.info}}</p>
+                    <input type="button" value="подробнее">
+                </div>
+            </div>  
+        </div>
+    </div>
+    
+</div>
