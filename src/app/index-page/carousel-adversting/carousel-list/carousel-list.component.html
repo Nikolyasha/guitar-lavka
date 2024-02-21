@@ -1,6 +1,6 @@
 
 <div class="list-wrapper" >
-    <div class="arrows-wrapper">
+    <div class="arrows-wrapper main-wrapper">
         <div class="arrow-item">
             <img src="../../../assets/images/index-page/carousel-adversting/arrow-left.svg" alt="" (click)="swapCarouselLeft()">
         </div>
@@ -10,8 +10,8 @@
     </div>
     <div class="carousel-section" [ngStyle]="{'transform':'translateX('+positionCarousel+'%)'}">
 
-        <div class="list-item" 
-            *ngFor="let item of carouselItems;let ind = index" 
+        <div class="list-item"
+            *ngFor="let item of carouselItems;let ind = index"
             [ngStyle]="{'backgroundImage':'url('+item.backgroundIMG+')','transform':'translateX('+(ind==0 ? 0 : (ind*100))+'%)'}"
             >
             <div class="info-wrapper">
@@ -21,8 +21,8 @@
                     <p class="text-info">{{item.info}}</p>
                     <input type="button" value="подробнее">
                 </div>
-            </div>  
+            </div>
         </div>
     </div>
-    
+
 </div>

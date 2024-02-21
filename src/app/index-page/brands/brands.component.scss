@@ -1,0 +1,28 @@
+@import "variables";
+.bands-wrapper{
+  position: relative;
+  margin-top: 22px;
+  .background-color{
+    position: absolute;
+    z-index: 17;
+    top:-60%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: $orange;
+  }
+  .items-list{
+    position: relative;
+    z-index: 210;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 29px;
+    .item-brand{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+    }
+  }
+}

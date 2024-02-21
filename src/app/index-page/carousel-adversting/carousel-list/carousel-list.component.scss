@@ -1,6 +1,5 @@
 @import "variables";
 .list-wrapper{
-    
     overflow-x: hidden;
     // transform: translateX(50%);
     position: relative;
@@ -10,11 +9,12 @@
     .arrows-wrapper{
         position: absolute;
         z-index: 100;
-        top: 50%;
-        transform: translateY(-50%);
+        top: 0;
         width: 100%;
         display: flex;
-        //  border: 1px solid red;
+        align-items: center;
+        left: 50%;
+        transform: translate(-50%,0);
         justify-content: space-between;
         .arrow-item{
             height: 50px;
@@ -73,7 +73,7 @@
                     }
                 }
             }
-    
+
         }
     }
 
