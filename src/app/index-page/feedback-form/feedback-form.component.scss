@@ -45,22 +45,22 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        .title-styles{
-          font-family: $doppioOne;
-          text-transform: uppercase;
-        }
         .first-text-block{
           margin-top: 36px;
           color: rgb(59, 58, 64);
           font-size: 18px;
           font-weight: 400;
+          font-family: $doppioOne;
+          text-transform: uppercase;
         }
         .title{
           margin-top: 6px;
           color: $orange;
           font-size: 48px;
-          font-weight: 400;
+          font-weight: 500;
           line-height: 45px;
+          font-family: $doppioOne;
+          text-transform: uppercase;
         }
         .subtitle{
           color: rgb(191, 185, 177);
@@ -90,6 +90,7 @@
             }
           }
           input{
+            font-family: $doppioOne;
             flex-grow: 1;
             margin-right: 11px;
             height: 43px;
