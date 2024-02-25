@@ -1,0 +1,19 @@
+<section class="main-services-block">
+  <div class="title-main">
+    <h3>Услуги</h3>
+    <div class="line"></div>
+  </div>
+  <div class="main-wrapper services-wrapper">
+    <div class="item-service" *ngFor="let item of servicesItems" [ngStyle]="{'background-image':'url('+item.backgroundImage+')'}">
+      <div class="mask-item">
+        <div class="title">{{ item.title }}</div>
+        <div class="content-item">
+          <p>{{ item.text }}</p>
+          <div class="show-more">
+            <a href="">показать еще</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

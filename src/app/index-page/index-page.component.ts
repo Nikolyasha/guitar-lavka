@@ -3,11 +3,17 @@ import { CarouselAdverstingComponent } from './carousel-adversting/carousel-adve
 import { MainCategoriesComponent } from './main-categories/main-categories.component'
 import { BrandsComponent} from "./brands/brands.component";
 import { PopularGoodsComponent} from "./popular-goods/popular-goods.component";
+import { MainServicesComponent } from "./main-services/main-services.component";
 
 @Component({
   selector: 'index-page',
   standalone: true,
-  imports: [CarouselAdverstingComponent,MainCategoriesComponent,BrandsComponent,PopularGoodsComponent],
+  imports:
+    [CarouselAdverstingComponent,
+      MainCategoriesComponent,
+      BrandsComponent,
+      PopularGoodsComponent,
+      MainServicesComponent],
   templateUrl: './index-page.component.html',
   styleUrl: './index-page.component.scss'
 })
