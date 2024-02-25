@@ -1,6 +1,7 @@
-.wrapper-popular-goods{
-  //margin-top: 86px;
+.block-popular-goods{
   max-width: 1084px;
   margin: 0 auto;
-
+  .popular-goods-wrapper{
+    margin-top: 86px;
+  }
 }
