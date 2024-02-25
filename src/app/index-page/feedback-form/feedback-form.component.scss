@@ -1,0 +1,115 @@
+@import "variables";
+.feedback-block{
+  margin-top: 130px;
+  .feedback-wrapper{
+    position: relative;
+    margin: 0 auto;
+    max-width: 1152px;
+    height: 343px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    .background-img{
+      width: 1000%;
+      height: 100%;
+      position: absolute;
+      right: 23.09%;
+      border-radius: 0 171.5px 171.5px 0;
+      //background: $orange ;
+      background-image: url("../../../assets/images/index-page/feedback-form/background.png");
+      background-size: 15%;
+      background-position: right;
+      background-repeat: no-repeat;
+      background-color: #0B0B14;
+      overflow: hidden;
+      .mask{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background: $orange-line;
+        opacity: 0.6;
+        z-index: 21;
+      }
+    }
+    .form{
+      z-index: 22;
+      width: 53.82%;
+      height: 258px;
+      background: $color-feedback-form;
+      border-radius: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .title-styles{
+          font-family: $doppioOne;
+          text-transform: uppercase;
+        }
+        .first-text-block{
+          margin-top: 36px;
+          color: rgb(59, 58, 64);
+          font-size: 18px;
+          font-weight: 400;
+        }
+        .title{
+          margin-top: 6px;
+          color: $orange;
+          font-size: 48px;
+          font-weight: 400;
+          line-height: 45px;
+        }
+        .subtitle{
+          color: rgb(191, 185, 177);
+          font-family: $doppioOne;
+          font-size: 14px;
+          font-weight: 400;
+        }
+      }
+      form{
+        width: 100%;
+        padding: 0 35px 20px 45px;
+        .input-email{
+          display: flex;
+          button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 43px;
+            width: 77px;
+            border-radius: 5px;
+            border: none;
+            background: rgb(204, 116, 8);
+            cursor: pointer;
+            img{
+              height: 27px;
+              width: auto;
+            }
+          }
+          input{
+            flex-grow: 1;
+            margin-right: 11px;
+            height: 43px;
+            padding: 4px 11px;
+            color: #3B3A40;
+            border-radius: 5px;
+            border: none;
+            box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            background: rgb(242, 234, 224);
+          }
+        }
+        .agreement{
+          margin-top: 3px;
+          font-size: 14px;
+          color: #C4C4C499 ;
+          font-style: italic;
+          text-decoration: underline;
+        }
+      }
+
+    }
+  }
+}

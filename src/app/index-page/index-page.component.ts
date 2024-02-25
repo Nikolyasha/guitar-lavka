@@ -4,6 +4,7 @@ import { MainCategoriesComponent } from './main-categories/main-categories.compo
 import { BrandsComponent} from "./brands/brands.component";
 import { PopularGoodsComponent} from "./popular-goods/popular-goods.component";
 import { MainServicesComponent } from "./main-services/main-services.component";
+import { FeedbackFormComponent } from "./feedback-form/feedback-form.component";
 
 @Component({
   selector: 'index-page',
@@ -13,7 +14,8 @@ import { MainServicesComponent } from "./main-services/main-services.component";
       MainCategoriesComponent,
       BrandsComponent,
       PopularGoodsComponent,
-      MainServicesComponent],
+      MainServicesComponent,
+      FeedbackFormComponent],
   templateUrl: './index-page.component.html',
   styleUrl: './index-page.component.scss'
 })
