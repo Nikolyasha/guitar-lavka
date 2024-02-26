@@ -1,0 +1,21 @@
+@import "variables";
+footer{
+  margin-top: 140px;
+  position: relative;
+  .line{
+    position: absolute;
+    content: '';
+    width: 90%;
+    margin-right: 105%;
+    height: 1px;
+    background-color: #242424;
+  }
+}
+.footer-wrapper{
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 32px 35px;
+  display: flex;
+  justify-content: space-between;
+
+}

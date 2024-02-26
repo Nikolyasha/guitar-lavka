@@ -1,0 +1,33 @@
+export const SocialLinks=[
+    {
+      name:"WhatsApp",
+      linkAddress:"#",
+      imgURL:"../../../assets/images/top-header/whatsapp.svg",
+    },
+    {
+      name:"Telegram",
+      linkAddress:"#",
+      imgURL:"../../../assets/images/top-header/telegram.svg",
+    },
+    {
+      name:"VK",
+      linkAddress:"#",
+      imgURL:"../../../assets/images/top-header/vk.svg",
+    },
+    {
+      name:"Viber",
+      linkAddress:"#",
+      imgURL:"../../../assets/images/top-header/viber.svg",
+    },
+    {
+      name:"YouTube",
+      linkAddress:"#",
+      imgURL:"../../../assets/images/top-header/youtube.svg",
+    },
+    {
+      name:"Instagram",
+      linkAddress:"#",
+      imgURL:"../../../assets/images/top-header/instagram.svg",
+    }
+  ];
+

@@ -1,0 +1,34 @@
+<div class="left-side">
+  <div class="logo">
+    <img src="../assets/images/footer/logo.png" alt="">
+  </div>
+  <p class="about-us">
+    Мы работаем по всей России, поэтому можем сделать онлайн-показ инструмента и доставить его до вашей двери
+  </p>
+  <div class="contacts">
+    <div class="phone">
+      <p class="questions">Остались вопросы?</p>
+      <a href="tel:88001002680">8 (800) 100-26-80</a>
+    </div>
+    <div class="email">
+      <p>ежедневно 10:00-20:00</p>
+      <a href="mailto:info@guitarlavka.ru">{{'info@guitarlavka.ru'}}</a>
+    </div>
+  </div>
+  <div class="social-links">
+    <a [href]="item.linkAddress" class="links-item" *ngFor="let item of socialLinksItems">
+      <img [src]="item.imgURL" [alt]="item.name">
+    </a>
+  </div>
+  <div class="pay-methods">
+    <p>способы оплаты</p>
+    <div class="pay-wrapper">
+      <div class="pay-item" *ngFor="let item of payMethods">
+        <img [src]="item.imgUrl" [alt]="item.name">
+      </div>
+    </div>
+  </div>
+  <p class="privacy-policy">© 2021 GuitarLavka - музыкальный магазин
+    Политика конфиденциальности
+  </p>
+</div>

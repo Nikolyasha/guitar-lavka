@@ -1,0 +1,79 @@
+@import "variables";
+.left-side{
+  .logo{
+    margin-left: -15px;
+    display: flex;
+    img{
+      width: 386px;
+      height: auto;
+    }
+  }
+  .about-us{
+    width: 477px;
+    font-family: $doppioOne;
+    color: $color-footer-text;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+  }
+  .contacts{
+    margin-top: 27px;
+    .phone{
+      p{
+        color: $color-footer-text;
+        font-size: 18px;
+        font-weight: 400;
+      }
+    }
+    .email{
+      margin-top: 27px;
+      p{
+        text-transform: uppercase;
+        color: $color-footer-text;
+        font-size: 18px;
+        font-weight: 400;
+      }
+    }
+  }
+  .social-links{
+    margin-top: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 233px;
+    .links-item{
+      display: flex;
+      img{
+        width: 19.25px;
+        height: auto;
+      }
+    }
+  }
+  .pay-methods{
+    margin-top: 32px;
+    p{
+      text-transform: uppercase;
+      color: $color-footer-text;
+      font-size: 18px;
+      font-weight: 400;
+    }
+    .pay-wrapper{
+      display: flex;
+      align-items: center;
+      gap:2px;
+      .pay-item{
+        img{
+
+        }
+      }
+    }
+  }
+  .privacy-policy{
+    margin-top: 167px;
+    max-width: 396px;
+    color: $color-footer-text;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+  }
+}

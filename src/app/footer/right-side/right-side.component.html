@@ -1,0 +1,13 @@
+<div class="right-side">
+  <div class="menu">
+    <div class="menu-category" *ngFor="let key of getKeys()">
+      <h4>{{ key }}</h4>
+      <a href="" class="category-item"*ngFor="let value of getValues(key)">
+        {{value}}
+      </a>
+    </div>
+  </div>
+  <div class="telephone">
+    <img src="../assets/images/footer/telephone-inst.png" alt="">
+  </div>
+</div>

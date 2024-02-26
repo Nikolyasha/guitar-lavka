@@ -5,12 +5,12 @@
             <p class="city-name">{{cityName}}</p>
         </div>
         <div class="social-links">
-            <div class="link-item" *ngFor="let item of socialLinks">
-                <a [href]="item.linkAdress">
+            <div class="link-item" *ngFor="let item of socialLinksItems">
+                <a [href]="item.linkAddress">
                     <img [src]="item.imgURL" alt="">
                 </a>
             </div>
-            
+
         </div>
         <div class="contacts-info">
             <div class="phone-info">
@@ -22,6 +22,6 @@
             <p class="day-info contact-style">{{dayInfo}}</p>
             <p class="schedule-info contact-style">{{scheduleInfo}}</p>
         </div>
-        
+
     </div>
 </div>

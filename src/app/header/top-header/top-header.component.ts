@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { SocialLinks} from "../../common/social-links/social-links";
 
 @Component({
   selector: 'top-header',
@@ -14,36 +15,5 @@ export class TopHeaderComponent {
   phoneNumber:string="8 (800) 100 26 80";
   dayInfo:string="ЕЖЕДНЕВНО";
   scheduleInfo:string="10:00-20:00";
-  socialLinks=[
-    {
-      name:"WhatsApp",
-      linkAdress:"#",
-      imgURL:"../../../assets/images/top-header/whatsapp.svg",
-    },
-    {
-      name:"Telegram",
-      linkAdress:"#",
-      imgURL:"../../../assets/images/top-header/telegram.svg",
-    },
-    {
-      name:"VK",
-      linkAdress:"#",
-      imgURL:"../../../assets/images/top-header/vk.svg",
-    },
-    {
-      name:"Viber",
-      linkAdress:"#",
-      imgURL:"../../../assets/images/top-header/viber.svg",
-    },
-    {
-      name:"YouTube",
-      linkAdress:"#",
-      imgURL:"../../../assets/images/top-header/youtube.svg",
-    },
-    {
-      name:"Instagram",
-      linkAdress:"#",
-      imgURL:"../../../assets/images/top-header/instagram.svg",
-    }
-  ];
+  socialLinksItems=SocialLinks;
 }

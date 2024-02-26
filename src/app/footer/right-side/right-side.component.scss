@@ -1,0 +1,36 @@
+@import "variables";
+.right-side{
+  .menu{
+    margin-top: 20px;
+    display: flex;
+    width: 451px;
+    .menu-category{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      h4{
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 28px;
+        margin-bottom: 11px;
+      }
+      a{
+        color: $color-footer-text;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21px;
+      }
+
+    }
+  }
+  .telephone{
+    margin-top: 92px;
+    display: flex;
+    img{
+      width: 443px;
+      height: auto;
+    }
+  }
+}
