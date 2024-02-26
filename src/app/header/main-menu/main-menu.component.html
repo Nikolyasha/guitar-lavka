@@ -18,7 +18,7 @@
             </div>
         </div>
         <div class="menu-layer">
-            <div class="item-menu" *ngFor="let link of mainMenuLinks"><a href="">{{link}}</a></div>
+            <div class="item-menu" *ngFor="let link of mainMenuLinks"><a [routerLink]="link.linkURL">{{link.name}}</a></div>
         </div>
     </div>
 </div>

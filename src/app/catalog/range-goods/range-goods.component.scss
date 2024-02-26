@@ -1,0 +1,70 @@
+@import "variables";
+.range-goods-wrapper{
+  width: 232px;
+  .titles{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 31px;
+    .catalog-name{
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 35px;
+    }
+    .filters-name{
+      color: $orange;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 35px;
+
+    }
+  }
+  .accordion-goods{
+    .accordion-item{
+      margin-top: 12px;
+      .item-title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h4{
+          text-transform: uppercase;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 17px;
+        }
+        .arrow{
+          display: flex;
+          button{
+            display: flex;
+            background-color: transparent;
+            border: none;
+            img{
+              transition: all 0.1s ease-in;
+              width: 17px;
+              height: auto;
+              cursor: pointer;
+              opacity: 0.6;
+            }
+          }
+
+        }
+      }
+      .item-list{
+        margin-top: 10px;
+        margin-bottom: 37px;
+        display: flex;
+        flex-direction: column;
+        a{
+          width: fit-content;
+          color: $color-footer-text;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 30px;
+          transition: color 0.2s ease;
+          &:hover{
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}

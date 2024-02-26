@@ -1,0 +1,10 @@
+*{
+  border: 1px solid red;
+}
+.catalog-wrapper{
+  display: flex;
+  .product-list{
+    max-width: 940px;
+    margin: 0 auto;
+  }
+}

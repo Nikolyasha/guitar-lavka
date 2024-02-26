@@ -1,0 +1,26 @@
+<div class="range-goods-wrapper">
+  <div class="titles">
+    <h4 class="catalog-name">
+      Каталог
+    </h4>
+    <h4 class="filters-name">
+      Фильтры
+    </h4>
+  </div>
+  <div class="accordion-goods">
+    <div class="accordion-item" *ngFor="let key of getKeys()">
+      <div class="item-title">
+        <h4 [ngStyle]="{'color':getIsDetected(key) ? 'rgb(234, 131, 5)':'white'}" >{{ key }}</h4>
+        <div class="arrow">
+          <button (click)="openAccordionItem(key)">
+            <img src="../assets/images/index-page/carousel-adversting/arrow-right.svg" alt=""
+                 [ngStyle]="{'transform':getIsDetected(key) ? 'rotate(90deg)':'rotate(0)'}">
+          </button>
+        </div>
+      </div>
+      <div class="item-list" *ngIf="accordionItems.get(key).isDetected">
+        <a href="" class="list-link"  *ngFor="let val of getValues(key)">{{val}}</a>
+      </div>
+    </div>
+  </div>
+</div>
