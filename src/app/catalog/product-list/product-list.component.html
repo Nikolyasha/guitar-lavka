@@ -1,0 +1,35 @@
+<div class="position-container-wrapper">
+  <range-goods></range-goods>
+  <div class="prod-list-wrapper">
+    <div class="filter">
+      <filter-goods></filter-goods>
+    </div>
+    <div class="items-list">
+      <div class="carousel-section-item" *ngFor="let item of goodsItems">
+        <div class="image-good">
+        </div>
+        <div class="info-good">
+          <p class="subtitle-good">{{ item.category }}</p>
+          <h4 class="name-good">{{ item.name }}</h4>
+          <div class="footer-good">
+            <div class="price-info">
+              <p class="price price-style">₽{{ item.price }}</p>
+              <p class="discounted-price price-style">₽{{ item.discountedPrice }}</p>
+            </div>
+            <div class="reviews">
+              <div class="rating">
+                <div class="star"><img src="../../../../assets/images/index-page/popular-goods/Star.svg" alt=""></div>
+                <div class="star"><img src="../../../../assets/images/index-page/popular-goods/Star.svg" alt=""></div>
+                <div class="star"><img src="../../../../assets/images/index-page/popular-goods/Star.svg" alt=""></div>
+                <div class="star"><img src="../../../../assets/images/index-page/popular-goods/Star.svg" alt=""></div>
+                <div class="star"><img src="../../../../assets/images/index-page/popular-goods/Star.svg" alt=""></div>
+              </div>
+              <p>{{ item.reviews }} отзывов</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

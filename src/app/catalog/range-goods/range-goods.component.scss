@@ -1,5 +1,9 @@
 @import "variables";
 .range-goods-wrapper{
+  margin-top: 13px;
+  position: absolute;
+  transform: translateX(-100%);
+  margin-left: -64px;
   width: 232px;
   .titles{
     display: flex;

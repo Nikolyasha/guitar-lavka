@@ -1,0 +1,113 @@
+@import "variables";
+.filter-wrapper{
+  margin-top: 22px;
+  margin-bottom: 28px;
+  display: flex;
+  max-width: 907px;
+  .display-flex{
+    display: flex;
+    align-items: center;
+    p{
+      color: $white;
+      opacity: 0.6;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+  .count-goods{
+  }
+  .in-stock{
+    margin-left: auto;
+
+    .checkbox{
+      margin-left: 14px;
+      width: 24px;
+      height: 24px;
+      background: transparent;
+      border: 1px solid rgb(161, 160, 163);
+      border-radius: 5px;
+      position: relative;
+      input{
+        cursor: pointer;
+        opacity: 0;
+        width: 24px;
+        height: 24px;
+        position: relative;
+        z-index: 101;
+      }
+      label{
+        z-index: 100;
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        background: transparent;
+        cursor: pointer;
+        &:after{
+          -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+          filter: alpha(opacity=0);
+          opacity: 0;
+          content: '';
+          position: absolute;
+          width: 15px;
+          height: 9px;
+          background: transparent;
+          top: 4px;
+          left: 4px;
+          border: 3px solid #fcfff4;
+          border-top: none;
+          border-right: none;
+          -webkit-transform: rotate(-45deg);
+          -moz-transform: rotate(-45deg);
+          -o-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+        }
+        &:hover::after{
+          opacity: 0.3;
+          -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+          filter: alpha(opacity=30);
+          opacity: 0.3;
+        }
+      }
+      input:checked + label:after{
+        opacity: 1;
+      }
+    }
+  }
+  .sort{
+    margin-left: 23px;
+    select{
+      z-index: 100;
+      margin-left: 6px;
+      padding: 4px 41px 3px 21px;
+      border-radius: 5px;
+      background: rgba(196, 196, 196, 0.3);
+      border: none;
+      cursor: pointer;
+    }
+  }
+  .count-view{
+    margin-left: 40px;
+    input{
+      text-align: center;
+      padding: 4px 0;
+      background:rgba(196, 196, 196, 0.3);
+      border: none;
+      border-radius: 5px;
+      width: 62px;;
+    }
+  }
+  .grid-catalog{
+    margin-left: 48px;
+    gap:6px;
+    img{
+      filter: brightness(100);
+      cursor: pointer;
+      &:hover{
+        filter: brightness(1);
+      }
+    }
+  }
+}
